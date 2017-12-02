@@ -150,34 +150,66 @@ hr {
 }
 
 /*GRADS COMPONENT*/
+.year {
+    width: 100%;
+    background: rgba(0, 0, 0, .85);
+}
+
+.year h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.5em;
+    margin: 0;
+    text-align: left;
+    padding: .25em;
+}
+
 .studentCard {
   margin: 1em auto;
   padding: 1em;
   width: 80%;
-  max-width: 300px;
+  max-width: 285px;
   background: rgba(0, 0, 0, .85);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
+}
+
+.studentCard img {
+    border: solid 1px white;
+}
+
+.thesis p, .digital p {
+    background-color: black;
+    position: relative;
+    padding: 1em 5px;
+    width: 235px;
+    margin: auto;
+    bottom: 1em;
+    text-transform: uppercase;
+    border: solid 1px white;
+}
+
+.thesis a, .digital a {
+    text-decoration: none;
 }
 
 .person {
   display: inline-block;
   margin: auto;
-  margin-bottom: 1em;
-
+  margin-bottom: .5em;
 }
 
+/* i stopped using a person image
 .person img {
   border-radius: 100%;
   float: left;
   margin: 0 1em;
-}
+}*/
 
-.person h1 {
+.studentCard h1 {
   display: block;
   text-transform: uppercase;
-  text-align: left;
-  margin-left: 3em;
-  font-weight: 100;
+  font-weight: 300;
+    font-size: 1.5em;
 }
 
 .work img {
@@ -211,6 +243,7 @@ hr {
   width: 80%;
   max-width: 700px;
   margin: auto;
+    margin-top: 3em;
 }
 
 /*THESIS COMPONENT*/
