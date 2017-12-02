@@ -12,12 +12,14 @@
 
     <link href="index.css" rel="stylesheet"/>
 
-
-
-
 </head>
 
+<!--
+TODO
+[ ] add images to cards
+[ ] figure out better way to delinate by year
 
+-->
 
 
 <body>
@@ -31,11 +33,7 @@
 
 
     <div id="header">
-        <div id="bigHeader">
-            <h3>california college of the arts</h3>
-            <img src='./images/ui/comicsLogo.svg' alt="CCA MFA in Comcis"/>
-            <h3>catalogue of student work</h3>
-        </div>
+
         <div id="stickyHeader">
             <div id="headerContent">
                 <a href="/">
@@ -48,54 +46,54 @@
     </div>
 
 
-
-
-
     <div id="grads">
-        <div className="note">
-            <p>The class of [YEAR] was Good At Stuff and also we liked them a lot personally.</p>
-            <p>templated divs, generate one for each student of [YEAR]</p>
-            <p>maybe there's a js file for each graduating class with an object that has all the info about them to generate the paths</p>
-        </div>
 
         <div class="cardDad" id="cards2017">
-            <h2>2017</h2>
+            <div class="button">
+                <a href="./directory.html">
+                    <h3>class of</h3>
+                    <h1>2017</h1>
+                </a>
+            </div>
         </div>
 
         <div class="cardDad" id="cards2016">
-            <h2>2016</h2>
+            <div class="button">
+                <a href="./directory.html#cards2016">
+                    <h3>class of</h3>
+                    <h1>2016</h1>
+                </a>
+            </div>
         </div>
 
         <div class="cardDad" id="cards2015">
-            <h2>2015</h2>
+            <div class="button">
+                <a href="./directory.html#cards2015">
+                    <h3>class of</h3>
+                    <h1>2015</h1>
+                </a>
+            </div>
         </div>
 
     </div>
 
 
-
-
     <div id="Footer">
-        <p>yo it is my footer it's got all the stuff u like</p>
-        <p>background image by [NAME OF STUDENT] from [TITLE OF WORK]</p>
+        <p>The California College of the Arts MFA in Comics Program offers an accredited low-residency graduate degree.
+        </p>
+        <a href="https://www.cca.edu/" target="_blank"><img src="images/ui/ccaLogo.png"></a>
+        <a href="https://www.cca.edu/academics/graduate/comics" target="_blank"><img src="images/ui/comicsLogo.svg"></a>
+        <a href="https://www.facebook.com/ccamfacomics" target="_blank"><img src="images/ui/mfafb.png"></a>
+        <br>
+        <a href="https://www.cca.edu/admissions/apply" target="_blank">Apply Now</a> | <a href="https://www.cca.edu/admissions/info" target="_blank">Get Info</a>
+        <!-- <p id="backgroundInfo">background image by [NAME OF STUDENT] from [TITLE OF WORK]</p>-->
     </div>
-
-
-
-
-
-
-
 
 
     <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
-
-
-
-
 
 
     <script>
@@ -134,9 +132,6 @@
         });
 
     </script>
-
-
-
 
 
 </body>
