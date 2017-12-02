@@ -10,96 +10,140 @@
     <title>Directory</title>
 
 
-
     <link href="index.css" rel="stylesheet"/>
+
 
 
 
 </head>
 
 
+
+
 <body>
-<noscript>
-    You need to enable JavaScript to run this app.
-</noscript>
 
 
 
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
 
 
 
-
-<div id="grads">
-    <div className="note">
-        <p>The class of [YEAR] was Good At Stuff and also we liked them a lot personally.</p>
-        <p>templated divs, generate one for each student of [YEAR]</p>
-        <p>maybe there's a js file for each graduating class with an object that has all the info about them to generate the paths</p>
+    <div id="header">
+        <div id="bigHeader">
+            <h3>california college of the arts</h3>
+            <img src='./images/ui/comicsLogo.svg' alt="CCA MFA in Comcis"/>
+            <h3>catalogue of student work</h3>
+        </div>
+        <div id="stickyHeader">
+            <div id="headerContent">
+                <a href="/">
+                    <img src='./images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
+                    <img src='./images/ui/ccaLogo.png' id="cca" alt="CCA" />
+                    <br style='clear:both' />
+                </a>
+            </div>
+        </div>
     </div>
 
-    <div class="cardDad" id="cards2015">
-        <h2>2015</h2>
+
+
+
+
+    <div id="grads">
+        <div className="note">
+            <p>The class of [YEAR] was Good At Stuff and also we liked them a lot personally.</p>
+            <p>templated divs, generate one for each student of [YEAR]</p>
+            <p>maybe there's a js file for each graduating class with an object that has all the info about them to generate the paths</p>
+        </div>
+
+        <div class="cardDad" id="cards2015">
+            <h2>2015</h2>
+        </div>
+
+        <div class="cardDad" id="cards2016">
+            <h2>2016</h2>
+        </div>
+
+        <div class="cardDad" id="cards2017">
+            <h2>2017</h2>
+        </div>
+
     </div>
 
-    <div class="cardDad" id="cards2016">
-        <h2>2016</h2>
+
+
+
+    <div id="Footer">
+        <p>yo it is my footer it's got all the stuff u like</p>
+        <p>background image by [NAME OF STUDENT] from [TITLE OF WORK]</p>
     </div>
 
-    <div class="cardDad" id="cards2017">
-        <h2>2017</h2>
-    </div>
-
-</div>
-
-<script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-
-<!--<script src="./students.js"></script>-->
-
-<script>
-
-    // takes student object, returns jQuery object
-    function makeStudentCard(student) {
-        var name = student.displayName,
-                slug = student.slug,
-                thesisUrl = './thesis/' + slug,
-                digitalUrl = './digital/' + slug,
-                thesisTitle = student.thesisTitle,
-                digitalTitle = student.digitalTitle,
-                spread = student.spread,
-                thesisPages = student.thesisPages;
-
-        // would be easier to turn this into a function
-
-        var studentDiv = $("<div class='studentCard'><p class='name'>" + name + "</p><span class='thesis'><a href='" + thesisUrl + "'>Thesis: " + thesisTitle + "</a></span>"+ "</p><span class='digital'><a href='" + digitalUrl + "'>DigitalProject: " + digitalTitle + "</a></span></div>");
-
-        return studentDiv;
-    }
 
 
-    $(document).ready(function() {
-
-        $.getJSON('data/students.json', function(data) {
 
 
-            data.students.map(function(student) {
-                var studentCard = makeStudentCard(student);
-                var classCardId = "#cards" + student.year;
-                $(classCardId).append(studentCard);
 
+
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <script>
+
+        // takes student object, returns jQuery object
+        function makeStudentCard(student) {
+            var name = student.displayName,
+                    slug = student.slug,
+                    thesisUrl = '/thesis/' + slug,
+                    digitalUrl = '/digital/' + student.digitalUrl,
+                    thesisTitle = student.thesisTitle,
+                    digitalTitle = student.digitalTitle,
+                    spread = student.spread,
+                    thesisPages = student.thesisPages;
+
+
+            var studentDiv = $("<div class='studentCard'><p class='name'>" + name + "</p><span class='thesis'><a href='" + thesisUrl + "'>Thesis: " + thesisTitle + "</a></span>"+ "</p><span class='digital'><a href='" + digitalUrl + "'>DigitalProject: " + digitalTitle + "</a></span></div>");
+
+            return studentDiv;
+        }
+
+
+        $(document).ready(function() {
+
+            $.getJSON('data/students.json', function(data) {
+
+
+                data.students.map(function(student) {
+                    var studentCard = makeStudentCard(student);
+                    var classCardId = "#cards" + student.year;
+                    $(classCardId).append(studentCard);
+
+                });
             });
+
         });
 
-    });
+    </script>
 
-</script>
+
+
+
 
 </body>
 
 <!-- JOYCE! -->
 
-<!--I didn't full implement this stuff below, in the "studentDiv" above, but you can! -->
+<!--I didn't full implement this stuff below, in the "studentDiv" above, but you can! Including the old code as notes for you below. -->
 
 <!--<div className="studentCard">-->
     <!--<div className="person">-->
