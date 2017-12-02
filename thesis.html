@@ -6,17 +6,18 @@
     <meta name="theme-color" content="#000000">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
 
-    <title>Student Work</title>
+    <title></title>
 
     <link href="index.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/png" href="images/ui/favicon.png" />
 
 </head>
 
 <!--
 TODO
-[ ] set page title to thesis title
+[x] set page title to thesis title
 [ ] make "back" button way cuter
-[ ] add header with thesis title and student byline
+[x] add header with thesis title and student byline
 
 NICE TO HAVE
 [x] display spreads as double wide
@@ -35,27 +36,29 @@ NICE TO HAVE
 
 
 <div id="header">
-    <div id="stickyHeader">
+   <div id="stickyHeader">
         <div id="headerContent">
             <a href="/">
                 <img src='./images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
                 <img src='./images/ui/ccaLogo.png' id="cca" alt="CCA" />
                 <br style='clear:both' />
             </a>
+            <hr>
         </div>
+
+       <h1 id="title"></h1>
+       <h2 id="byline" style="padding-bottom: 1em">by: </h2>
     </div>
+
 </div>
 
 
-
 <div id="thesis">
-
     <div id="comic">
 
         <!--student panels go here-->
 
     </div>
-
 
     <a href="/directory.html">
         <div class="button">
@@ -112,12 +115,18 @@ NICE TO HAVE
     // takes student object, returns jQuery object to be attached to existing DOM body
     function makeStudentThesis(student) {
 
+        document.title = student.thesisTitle + 'by' + student.displayName;
 
         console.log(student);
         var numberOfPagesPlusOne = student.thesisPages + 1;
         var studentPath = student.thesisPath;
 
         var thesisPage;
+
+        $('#title').append(student.thesisTitle);
+        $('#byline').append(student.displayName);
+
+
 
         for (var i=1; i < numberOfPagesPlusOne ; i++){
 
