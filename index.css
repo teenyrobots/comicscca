@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    background-image: url('images/backgrounds/17lay.jpg');
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/*GENERAL STYLES*/
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  display: block;
+  flex-wrap: wrap;
+  margin: auto;
+  background: rgba(0, 0, 0, .75);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
+  text-align: left;
+  width: 10em;
+  padding: .5em;
+  margin: 1em auto;
+}
+
+.button h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+.button h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.note {
+  width: 80%;
+  max-width: 700px;
+  display: block;
+  margin: 1em auto;
+  padding: 1em;
+  background: rgba(0, 0, 0, .75);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
+}
+
+/*HEADER COMPONENT*/
+#header {
+    background: rgba(0,0,0,.75);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, .6);
+}
+
+#bigHeader {
+    margin: auto;
+    text-align: left;
+    width: 80%;
+    max-width: 685px;
+    margin-top: 40vh;
+    padding: 1em 0;
+    display: none;
+
+}
+
+#bigHeader h3 {
+    font-weight: 300;
+}
+
+#stickyHeader {
+    color: white;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    height: 3em;
+    background: rgba(0,0,0,.75);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, .6);
+    margin-bottom: 1em;
+}
+
+#stickyHeader img {
+    height: 2em;
+}
+
+#headerContent {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+  padding-top: .5em;
+}
+
+#comics {
+  float: left;
+  padding-left: 1em;
+}
+
+#cca {
+  float: right;
+  padding-right: 1em;
+}
+
+/*STYLES FOR FOOTER COMPONENT*/
+#Footer {
+  width: 100%;
+  background: rgba(0,0,0,.7);
+  padding: 1em;
+}
+
+/*GRADS COMPONENT*/
+.studentCard {
+  margin: 1em auto;
+  padding: 1em;
+  width: 80%;
+  max-width: 300px;
+  background: rgba(0, 0, 0, .85);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
+}
+
+.person {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 1em;
+
+}
+
+.person img {
+  border-radius: 100%;
+  float: left;
+  margin: 0 1em;
+}
+
+.person h1 {
+  display: block;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 3em;
+  font-weight: 100;
+}
+
+.work img {
+  width: 100%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
+}
+
+.work a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.work a h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.workDiv {
+  background: rgba(0, 0, 0, .75);
+  width: 100%;
+  position: relative;
+  bottom: 70px;
+  padding: .25em 0;
+  margin-bottom: -50px;
+}
+
+.cardDad {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+/*THESIS COMPONENT*/
+#comic img {
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+}
