@@ -1,6 +1,116 @@
 {
   "students": [
     {
+      "displayName": "Trinidad Escobar",
+      "slug": "escobar",
+      "year": 2015,
+      "thesisPages": 12,
+      "spread": "FALSE",
+      "thesisTitle": "Flood",
+      "digitalTitle": "Undertow",
+      "digitalUrl": "15escobar/",
+      "thesisPath": "15escobar/"
+    },
+    {
+      "displayName": "Bex Freund",
+      "slug": "freund",
+      "year": 2015,
+      "thesisPages": 19,
+      "spread": "TRUE",
+      "thesisTitle": "Fever Dreams of the City that Never Was",
+      "digitalTitle": "Aisling",
+      "digitalUrl": "15freund/",
+      "thesisPath": "15freund/"
+    },
+    {
+      "displayName": "Ashley Guillory",
+      "slug": "guillory",
+      "year": 2015,
+      "thesisPages": 30,
+      "spread": "TRUE",
+      "thesisTitle": "Sam's Town",
+      "digitalTitle": "Morning Melody",
+      "digitalUrl": "15guillory/guillory.html",
+      "thesisPath": "15guillory/"
+    },
+    {
+      "displayName": "David Kelly",
+      "slug": "kelly",
+      "year": 2015,
+      "thesisPages": 8,
+      "spread": "FALSE",
+      "thesisTitle": "Shorts",
+      "digitalTitle": "How to Catch a Spider",
+      "digitalUrl": "15kelly/page1.html",
+      "thesisPath": "15kelly/"
+    },
+    {
+      "displayName": "Maia Kobabe",
+      "slug": "kobabe",
+      "year": 2015,
+      "thesisPages": 20,
+      "spread": "FALSE",
+      "thesisTitle": "The Thief's Tale",
+      "digitalTitle": "Night Driving",
+      "digitalUrl": "15kobabe/kobabe.html",
+      "thesisPath": "15kobabe/"
+    },
+    {
+      "displayName": "Jacob Magraw",
+      "slug": "magraw",
+      "year": 2015,
+      "thesisPages": 17,
+      "spread": "FALSE",
+      "thesisTitle": "Lost Puppet Show",
+      "digitalTitle": "The Base",
+      "digitalUrl": "15magraw/magraw.html",
+      "thesisPath": "15magraw/"
+    },
+    {
+      "displayName": "Shane McDermott",
+      "slug": "mcdermott",
+      "year": 2015,
+      "thesisPages": 14,
+      "spread": "FALSE",
+      "thesisTitle": "The Seahorse Adventures",
+      "digitalTitle": "",
+      "digitalUrl": "",
+      "thesisPath": "15mcdermott/"
+    },
+    {
+      "displayName": "Samuel Sattin",
+      "slug": "sattin",
+      "year": 2015,
+      "thesisPages": 21,
+      "spread": "FALSE",
+      "thesisTitle": "Dad Sleeps Armageddon",
+      "digitalTitle": "Loon",
+      "digitalUrl": "15sattin/sattin.html",
+      "thesisPath": "15sattin/"
+    },
+    {
+      "displayName": "Nancy Teresa",
+      "slug": "teresa",
+      "year": 2015,
+      "thesisPages": 15,
+      "spread": "FALSE",
+      "thesisTitle": "Fushicho (Wesley)",
+      "digitalTitle": "Gratitude",
+      "digitalUrl": "15teresa/teresa.html",
+      "thesisPath": "15teresa/"
+    },
+    {
+      "displayName": "Josh White",
+      "slug": "white",
+      "year": 2015,
+      "thesisPages": 20,
+      "spread": "FALSE",
+      "thesisTitle": "Bad Year",
+      "digitalTitle": "I Went on a Walk and I Saw a Snake",
+      "digitalUrl": "15white/white.html",
+      "thesisPath": "15white/"
+    },
+    {
       "displayName": "Ryan Bitinis",
       "slug": "bitinis",
       "year": 2016,
@@ -108,7 +218,7 @@
       "thesisTitle": "Mazy & Gus",
       "digitalTitle": "",
       "digitalUrl": "",
-      "thesisPath": ""
+      "thesisPath": "16sumpter/"
     },
     {
       "displayName": "Samantha Nicole Traina",
@@ -131,6 +241,105 @@
       "digitalTitle": "Snack Time",
       "digitalUrl": "16williams/comics.html",
       "thesisPath": "16williams/"
+    },
+    {
+      "displayName": "Tris Bain",
+      "slug": "bain",
+      "year": 2017,
+      "thesisPages": 17,
+      "spread": "FALSE",
+      "thesisTitle": "The First Witch",
+      "digitalTitle": "The Key & Cup",
+      "digitalUrl": "16bain/",
+      "thesisPath": "16bain/"
+    },
+    {
+      "displayName": "Eli Bishop",
+      "slug": "bishop",
+      "year": 2017,
+      "thesisPages": 20,
+      "spread": "FALSE",
+      "thesisTitle": "TK",
+      "digitalTitle": "Spex",
+      "digitalUrl": "16bishop/",
+      "thesisPath": "16bishop/"
+    },
+    {
+      "displayName": "Craig Campbell",
+      "slug": "cambell",
+      "year": 2017,
+      "thesisPages": 16,
+      "spread": "FALSE",
+      "thesisTitle": "TK",
+      "digitalTitle": "Skinhead Mixtape",
+      "digitalUrl": "16cambell/",
+      "thesisPath": "16cambell/"
+    },
+    {
+      "displayName": "Lauren Davis",
+      "slug": "davis",
+      "year": 2017,
+      "thesisPages": 10,
+      "spread": "FALSE",
+      "thesisTitle": "Meet Your Supreme Court Justices",
+      "digitalTitle": "Obergefell Family Tree",
+      "digitalUrl": "16davis/",
+      "thesisPath": "16davis/"
+    },
+    {
+      "displayName": "Garrett Gainey",
+      "slug": "gainey",
+      "year": 2017,
+      "thesisPages": 14,
+      "spread": "FALSE",
+      "thesisTitle": "Speed of Light",
+      "digitalTitle": "Dungeon Dude: Quest for the Golden Duck",
+      "digitalUrl": "16gainey/",
+      "thesisPath": "16gainey/"
+    },
+    {
+      "displayName": "Patrick Lay",
+      "slug": "lay",
+      "year": 2017,
+      "thesisPages": 23,
+      "spread": "FALSE",
+      "thesisTitle": "Tk",
+      "digitalTitle": "Look Beneath",
+      "digitalUrl": "16lay/",
+      "thesisPath": "16lay/"
+    },
+    {
+      "displayName": "Yael Levy",
+      "slug": "levy",
+      "year": 2017,
+      "thesisPages": 24,
+      "spread": "FALSE",
+      "thesisTitle": "TK",
+      "digitalTitle": "Mermaid Beach Snorkeling",
+      "digitalUrl": "16levy/",
+      "thesisPath": "16levy/"
+    },
+    {
+      "displayName": "Amber Padilla",
+      "slug": "padilla",
+      "year": 2017,
+      "thesisPages": 16,
+      "spread": "FALSE",
+      "thesisTitle": "TK",
+      "digitalTitle": "A Kitten's Tale",
+      "digitalUrl": "16padilla/",
+      "thesisPath": "16padilla/"
+    },
+    {
+      "displayName": "Meggie Ramm",
+      "slug": "ramm",
+      "year": 2017,
+      "thesisPages": 16,
+      "spread": "FALSE",
+      "thesisTitle": "TK",
+      "digitalTitle": "EXPLORE THE INTERNET",
+      "digitalUrl": "16ramm/",
+      "thesisPath": "16ramm/"
     }
   ]
 }
