@@ -36,16 +36,189 @@
         <p>maybe there's a js file for each graduating class with an object that has all the info about them to generate the paths</p>
     </div>
 
-    <div className="cardDad cards2015">
+    <div class="cardDad" id="cards2015">
+        <h2>2015</h2>
     </div>
 
-    <div className="cardDad cards2016">
+    <div class="cardDad" id="cards2016">
+        <h2>2016</h2>
     </div>
 
-    <div className="cardDad cards2017">
+    <div class="cardDad" id="cards2017">
+        <h2>2017</h2>
     </div>
 
 </div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous"></script>
+
+<script src="./students.js"></script>
+
+<script>
+
+
+    //
+    //
+    //
+    // THESE ARE YOUR MASTER DATA OBJECTS
+    //
+    //
+
+    var students_2015 = [
+        {
+            displayName: 'Guillory Martin',
+            slug: "guillory",
+            year: '2015',
+            thesisPages: 30,
+            spread: true,
+            thesisTitle: "Sam's Town",
+            digitalTitle: "Morning Melody"
+        },
+        {
+            displayName: 'Kelly Jones',
+            slug: "kelly",
+            year: '2015',
+            thesisPages: 8,
+            spread: false,
+            thesisTitle: "Shorts",
+            digitalTitle: "How To Catch A Spider"
+        },
+        {
+            displayName: 'Kobabe Bryant',
+            slug: "kobabe",
+            year: '2015',
+            thesisPages: 20,
+            spread: false,
+            thesisTitle: "Sam's Town",
+            digitalTitle: "Morning Melody"
+        }
+    ];
+
+    var students_2016 = [
+        {
+            displayName: 'Guillory Martin',
+            slug: "guillory",
+            year: '2015',
+            thesisPages: 30,
+            spread: true,
+            thesisTitle: "Sam's Town",
+            digitalTitle: "Morning Melody"
+        },
+        {
+            displayName: 'Kelly Jones',
+            slug: "kelly",
+            year: '2015',
+            thesisPages: 8,
+            spread: false,
+            thesisTitle: "Shorts",
+            digitalTitle: "How To Catch A Spider"
+        },
+        {
+            displayName: 'Kobabe Bryant',
+            slug: "kobabe",
+            year: '2015',
+            thesisPages: 20,
+            spread: false,
+            thesisTitle: "Sam's Town",
+            digitalTitle: "Morning Melody"
+        }
+    ];
+
+    var students_2017 = [
+        {
+            displayName: 'Guillory Martin',
+            slug: "guillory",
+            year: '2015',
+            thesisPages: 30,
+            spread: true,
+            thesisTitle: "Sam's Town",
+            digitalTitle: "Morning Melody"
+        },
+        {
+            displayName: 'Kelly Jones',
+            slug: "kelly",
+            year: '2015',
+            thesisPages: 8,
+            spread: false,
+            thesisTitle: "Shorts",
+            digitalTitle: "How To Catch A Spider"
+        },
+        {
+            displayName: 'Kobabe Bryant',
+            slug: "kobabe",
+            year: '2015',
+            thesisPages: 20,
+            spread: false,
+            thesisTitle: "Sam's Town",
+            digitalTitle: "Morning Melody"
+        }
+    ];
+
+
+
+
+
+    //
+    //
+    //
+    // END MASTER DATA OBJECTS
+    //
+    //
+
+
+
+
+
+
+
+
+    // takes student object, returns jQuery object
+    function makeStudentCard(student) {
+        var name = student.displayName,
+                slug = student.slug,
+                thesisUrl = './thesis/' + slug,
+                digitalUrl = './digital/' + slug,
+                thesisTitle = student.thesisTitle,
+                digitalTitle = student.digitalTitle;
+
+        // would be easier to turn this into a function
+
+        var studentDiv = $("<div class='studentCard'><p class='name'>" + name + "</p><span class='thesis'><a href='" + thesisUrl + "'>Thesis: " + thesisTitle + "</a></span></div>");
+
+        return studentDiv;
+    }
+
+
+    $(document).ready(function() {
+
+        var cards2015 = $('#cards2015');
+        var cards2016 = $('#cards2016');
+        var cards2017 = $('#cards2017');
+
+
+        students_2015.map(function(student){
+            var studentDiv = makeStudentCard(student);
+            cards2015.append(studentDiv);
+        });
+
+        students_2016.map(function(student){
+            var studentDiv = makeStudentCard(student);
+            cards2016.append(studentDiv);
+        });
+
+        students_2017.map(function(student){
+            var studentDiv = makeStudentCard(student);
+            cards2017.append(studentDiv);
+        });
+
+    });
+
+</script>
+
+</body>
 
 
 <!--<div className="studentCard">-->
