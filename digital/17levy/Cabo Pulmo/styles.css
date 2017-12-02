@@ -1,0 +1,39 @@
+@font-face { 
+	font-family: yaelHand; src:url('assets/Yael_fineliner-Regular.ttf');
+}
+
+
+h1 {font-family: yaelHand;
+	font-size: 50px;
+	color:purple;
+	text-align:center;
+	}
+	
+
+.comics img{display:block;
+ 		 margin:auto;
+ 		 margin-bottom:100px;
+ 		 border: 2px solid black;
+
+}
+
+.nav {
+	position: fixed;
+	right:20px;
+	bottom:20px;
+}
+	
+.night {
+	display:block;
+	margin:auto;
+	position:relative;
+	width: 500px;
+	height: 500px ;
+	overflow: auto;
+}
+
+.night img {
+	position:absolute;
+	width:2846px;
+	height:3000px;
+}
