@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
+
+
+    <title>Directory</title>
+
+
+    <link href="index.css" rel="stylesheet"/>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+
+
+
+<div id="header">
+    <div id="bigHeader">
+        <h3>california college of the arts</h3>
+        <img src='./images/ui/comicsLogo.svg' alt="CCA MFA in Comcis"/>
+        <h3>catalogue of student work</h3>
+    </div>
+    <div id="stickyHeader">
+        <div id="headerContent">
+            <a href="/">
+                <img src='./images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
+                <img src='./images/ui/ccaLogo.png' id="cca" alt="CCA" />
+                <br style='clear:both' />
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="thesis">
+    <div class="note">
+        <p>populates page with each img blocks each page of student's thesis</p>
+        <p>also must:</p>
+        <ul>
+            <li>make the header not sticky</li>
+            <li>have a title</li>
+            <li>have a unique URL</li>
+        </ul>
+    </div>
+
+
+
+    <div id="comic">
+
+        <!--student panels go here-->
+
+    </div>
+
+
+
+
+    <a href="/directory.html">
+        <div class="button">
+            <p>go back to class of [YEAR]</p>
+        </div>
+    </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script>
+
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // return jQueryObject
+    // --- makeStudentThesis calls this for each page
+    function makeThesisPage(imgUrl) {
+
+
+        var thesisPage = $('<div className="thesisPage"><img src="' + imgUrl + '"/></div>')
+
+        return thesisPage;
+    }
+
+
+
+    // takes student object, returns jQuery object to be attached to existing DOM body
+    function makeStudentThesis(student) {
+
+
+        console.log(student);
+        var numberOfPagesPlusOne = student.thesisPages + 1;
+        var studentPath = student.thesisPath;
+
+        var thesisPage;
+
+        for (var i=1; i < numberOfPagesPlusOne ; i++){
+
+            filePath = '/images/thesis/' + studentPath + i + '.jpg';
+            console.log(filePath);
+
+            thesisPage = makeThesisPage(filePath);
+
+            $('#comic').append(thesisPage);
+
+        }
+    }
+
+
+    $(document).ready(function() {
+
+        var studentSlug = getParameterByName('student');
+
+        $.getJSON('data/students.json', function(data) {
+
+            var allStudents = data.students;
+            var currentStudent;
+
+
+            for (var x=0; x < allStudents.length; x++) {
+                if (allStudents[x].slug === studentSlug) {
+                    currentStudent = allStudents[x];
+                    break;
+                }
+            }
+
+            if (currentStudent) {
+
+                makeStudentThesis(currentStudent)
+            }
+
+        });
+
+    });
+
+</script>
+
+
+
+
+
+</body>
+</html>

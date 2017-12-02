@@ -8,34 +8,38 @@
       "spread": true,
       "thesisTitle": "Sam's Town",
       "digitalTitle": "Morning Melody",
+      "digitalUrl": "15guillory/guillory.html",
+      "thesisPath": "15guillory/"
+    },
+    {
+      "displayName": "kelly jones",
+      "slug": "kellyjones",
+      "year": "2015",
+      "thesisPages": 8,
+      "spread": true,
+      "thesisTitle": "Shorts",
+      "digitalTitle": "How To Catch a Spider",
+      "digitalUrl": "15guillory/guillory.html"
+    },
+    {
+      "displayName": "Kobabe ...",
+      "slug": "kobabe",
+      "year": "2015",
+      "thesisPages": 30,
+      "spread": true,
+      "thesisTitle": "...title...",
+      "digitalTitle": "....title...",
       "digitalUrl": "15guillory/guillory.html"
     },
     {
       "displayName": "kelly jones",
       "slug": "kellyjones",
-      "year": "2015",
-      "thesisPages": 8,
-      "spread": true,
-      "thesisTitle": "Shorts",
-      "digitalTitle": "How To Catch a Spider"
-    },
-    {
-      "displayName": "Kobabe ...",
-      "slug": "kobabe",
-      "year": "2015",
-      "thesisPages": 30,
-      "spread": true,
-      "thesisTitle": "...title...",
-      "digitalTitle": "....title..."
-    },
-    {
-      "displayName": "kelly jones",
-      "slug": "kellyjones",
       "year": "2016",
       "thesisPages": 8,
       "spread": true,
       "thesisTitle": "Shorts",
-      "digitalTitle": "How To Catch a Spider"
+      "digitalTitle": "How To Catch a Spider",
+      "digitalUrl": "15guillory/guillory.html"
     },
     {
       "displayName": "Kobabe ...",
@@ -44,7 +48,8 @@
       "thesisPages": 30,
       "spread": true,
       "thesisTitle": "...title...",
-      "digitalTitle": "....title..."
+      "digitalTitle": "....title...",
+      "digitalUrl": "15guillory/guillory.html"
     },
     {
       "displayName": "kelly jones",
@@ -53,7 +58,8 @@
       "thesisPages": 8,
       "spread": true,
       "thesisTitle": "Shorts",
-      "digitalTitle": "How To Catch a Spider"
+      "digitalTitle": "How To Catch a Spider",
+      "digitalUrl": "15guillory/guillory.html"
     },
     {
       "displayName": "Kobabe ...",
@@ -62,7 +68,8 @@
       "thesisPages": 30,
       "spread": true,
       "thesisTitle": "...title...",
-      "digitalTitle": "....title..."
+      "digitalTitle": "....title...",
+      "digitalUrl": "15guillory/guillory.html"
     }
   ]
 }
