@@ -1,0 +1,67 @@
+{
+  "students": [
+    {
+      "displayName": "Guillory Martin",
+      "slug": "guillory",
+      "year": "2015",
+      "thesisPages": 30,
+      "spread": true,
+      "thesisTitle": "Sam's Town",
+      "digitalTitle": "Morning Melody"
+    },
+    {
+      "displayName": "kelly jones",
+      "slug": "kellyjones",
+      "year": "2015",
+      "thesisPages": 8,
+      "spread": true,
+      "thesisTitle": "Shorts",
+      "digitalTitle": "How To Catch a Spider"
+    },
+    {
+      "displayName": "Kobabe ...",
+      "slug": "kobabe",
+      "year": "2015",
+      "thesisPages": 30,
+      "spread": true,
+      "thesisTitle": "...title...",
+      "digitalTitle": "....title..."
+    },
+    {
+      "displayName": "kelly jones",
+      "slug": "kellyjones",
+      "year": "2016",
+      "thesisPages": 8,
+      "spread": true,
+      "thesisTitle": "Shorts",
+      "digitalTitle": "How To Catch a Spider"
+    },
+    {
+      "displayName": "Kobabe ...",
+      "slug": "kobabe",
+      "year": "2016",
+      "thesisPages": 30,
+      "spread": true,
+      "thesisTitle": "...title...",
+      "digitalTitle": "....title..."
+    },
+    {
+      "displayName": "kelly jones",
+      "slug": "kellyjones",
+      "year": "2017",
+      "thesisPages": 8,
+      "spread": true,
+      "thesisTitle": "Shorts",
+      "digitalTitle": "How To Catch a Spider"
+    },
+    {
+      "displayName": "Kobabe ...",
+      "slug": "kobabe",
+      "year": "2017",
+      "thesisPages": 30,
+      "spread": true,
+      "thesisTitle": "...title...",
+      "digitalTitle": "....title..."
+    }
+  ]
+}
