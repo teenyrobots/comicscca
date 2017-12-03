@@ -130,14 +130,22 @@ TODO
 
 
             return studentDiv;
-        }
+        };
+
+        function randomBackground() {
+            var backgroundNum = Math.floor(Math.random() * 3) + 1;
+            console.log("the backgroundImg is " + backgroundImg);
+
+            var backgroundImg = "images/backgrounds/" + backgroundNum + ".jpg"
+            $('body').css('background-image', 'url(' + backgroundImg + ')');
+        };
 
 
         $(document).ready(function() {
 
+            randomBackground();
+
             $.getJSON('data/students.json', function(data) {
-
-
                 data.students.map(function(student) {
                     var studentCard = makeStudentCard(student);
                     var classCardId = "#cards" + student.year;

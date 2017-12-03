@@ -72,6 +72,27 @@ NICE TO HAVE
     <!-- <p id="backgroundInfo">background image by [NAME OF STUDENT] from [TITLE OF WORK]</p>-->
 </div>
 
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script>
+
+    function randomBackground() {
+        var backgroundNum = Math.floor(Math.random() * 3) + 1;
+        console.log("the backgroundImg is " + backgroundImg);
+
+        var backgroundImg = "images/backgrounds/" + backgroundNum + ".jpg"
+        $('body').css('background-image', 'url(' + backgroundImg + ')');
+    };
+
+
+    $(document).ready(function() {
+        randomBackground();
+    });
+
+</script>
 
 </body>
 
