@@ -17,8 +17,8 @@
 TODO
 [x] add images to cards
 [x] figure out better way to delinate by year
-[ ] why doesn't 2016 work
-[ ] do something about people with no digital
+[x] why doesn't 2016 work
+[x] do something about people with no digital
 -->
 
 <body>
@@ -72,7 +72,7 @@ TODO
         <div class="cardDad" id="cards2017">
         </div>
 
-        <div class="year" id="#2016">
+        <div class="year" id="2016">
             <h3>class of <span style="font-weight: 400">2016</span></h3>
         </div>
 
@@ -119,8 +119,14 @@ TODO
                     digitalTitle = student.digitalTitle,
                     thesisPages = student.thesisPages;
 
+            if (!digitalTitle) {
+                console.log("no digital project");
+                var studentDiv = $("<div class='studentCard'>" + "<h1>" + name + "</h1><span class='thesis'><a href='" + thesisUrl + "'><img src='images/cards/thesis/" + slug + ".png'><p>" + thesisTitle + "</p></a></span>");
+            } else {
+                var studentDiv = $("<div class='studentCard'>" + "<h1>" + name + "</h1><span class='thesis'><a href='" + thesisUrl + "'><img src='images/cards/thesis/" + slug + ".png'><p>" + thesisTitle + "</p></a></span>"+ "</p><span class='digital'><a href='" + digitalUrl + "'><img src='images/cards/digital/" + slug + ".png'><p>" + digitalTitle + "</p></a></span></div>");
+            }
+
             //var studentDiv = $("<div class='studentCard'>" + "<p class='name'>" + name + "</p><span class='thesis'><a href='" + thesisUrl + "'>Thesis: " + thesisTitle + "</a></span>"+ "</p><span class='digital'><a href='" + digitalUrl + "'>DigitalProject: " + digitalTitle + "</a></span></div>");
-            var studentDiv = $("<div class='studentCard'>" + "<h1>" + name + "</h1><span class='thesis'><a href='" + thesisUrl + "'><img src='images/cards/thesis/" + slug + ".png'><p>" + thesisTitle + "</p></a></span>"+ "</p><span class='digital'><a href='" + digitalUrl + "'><img src='images/cards/digital/" + slug + ".png'><p>" + digitalTitle + "</p></a></span></div>");
 
 
             return studentDiv;
