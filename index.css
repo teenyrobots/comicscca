@@ -43,9 +43,8 @@ p {
     font-weight: 300;
 }
 
-.transp {
+.transparent {
     background-color: rgba(255, 255, 255, .6);
-
 }
 
 .button a {
@@ -109,7 +108,7 @@ p {
 #stickyHeader {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 100vw;
     max-width: 700px;
     padding-top: .5em;
     color: white;
@@ -149,7 +148,7 @@ p {
 
 /*STYLES FOR FOOTER COMPONENT*/
 #Footer {
-  width: 100%;
+  width: 100vw;
   background: rgba(0,0,0,.85);
   padding: 1em;
 }
@@ -175,7 +174,7 @@ p {
     font-weight: 200;
     font-size: 1.5em;
     margin: 0;
-    text-align: left;
+    text-align: center;
     padding: .25em;
     max-width: 675px;
     margin: auto;
@@ -209,50 +208,12 @@ p {
     text-decoration: none;
 }
 
-/*.person {
-  display: inline-block;
-  margin: auto;
-  margin-bottom: .5em;
-}
-
- i stopped using a person image
-.person img {
-  border-radius: 100%;
-  float: left;
-  margin: 0 1em;
-}*/
-
 .studentCard h1 {
   display: block;
   text-transform: uppercase;
   font-weight: 300;
     font-size: 1.5em;
 }
-
-/*.work img {
-  width: 100%;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
-}
-
-.work a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.work a h3 {
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-.workDiv {
-  background: rgba(0, 0, 0, .75);
-  width: 100%;
-  position: relative;
-  bottom: 70px;
-  padding: .25em 0;
-  margin-bottom: -50px;
-}*/
 
 .cardDad {
     display: flex;
