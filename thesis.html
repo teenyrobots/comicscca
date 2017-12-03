@@ -6,21 +6,27 @@
     <meta name="theme-color" content="#000000">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
 
-
-    <title>Directory</title>
-
+    <title></title>
 
     <link href="index.css" rel="stylesheet"/>
-
-
-
+    <link rel="shortcut icon" type="image/png" href="images/ui/favicon.png" />
 
 </head>
 
+<!--
+TODO
+[x] set page title to thesis title
+[x] add header with thesis title and student byline
+
+NICE TO HAVE
+[x] display spreads as double wide
+[ ] tweak thesis header
+[ ] make "back" button way cuter
+[ ] dynamically set bg to black or white depending on student work (inc in json)
+-->
 
 
-
-<body>
+<body style="background-image: none; background-color: white;">
 
 
 
@@ -31,65 +37,46 @@
 
 
 <div id="header">
-    <div id="bigHeader">
-        <h3>california college of the arts</h3>
-        <img src='./images/ui/comicsLogo.svg' alt="CCA MFA in Comcis"/>
-        <h3>catalogue of student work</h3>
-    </div>
-    <div id="stickyHeader">
-        <div id="headerContent">
+   <div id="stickyHeader">
             <a href="/">
-                <img src='./images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
-                <img src='./images/ui/ccaLogo.png' id="cca" alt="CCA" />
+                <img src='/images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
+                <img src='images/ui/ccaLogo.svg' id="cca" alt="CCA" />
                 <br style='clear:both' />
             </a>
-        </div>
+            <hr>
+
+       <h1 id="title"></h1>
+       <h2 id="byline" style="padding-bottom: 1em">by: </h2>
     </div>
+
 </div>
 
 
-
-
-
-
-<div id="thesis">
-    <div class="note">
-        <p>populates page with each img blocks each page of student's thesis</p>
-        <p>also must:</p>
-        <ul>
-            <li>make the header not sticky</li>
-            <li>have a title</li>
-            <li>have a unique URL</li>
-        </ul>
-    </div>
-
-
-
+<div id="thesis" >
     <div id="comic">
 
         <!--student panels go here-->
 
     </div>
 
-
-
-
     <a href="/directory.html">
         <div class="button">
-            <p>go back to class of [YEAR]</p>
+            <p>back to anthology</p>
         </div>
     </a>
 </div>
 
 
-
-
-
-
-
-
-
-
+<div id="Footer">
+    <p>The California College of the Arts MFA in Comics Program offers an accredited low-residency graduate degree.
+    </p>
+    <a href="https://www.cca.edu/" target="_blank"><img src="images/ui/ccaLogo.svg"></a>
+    <a href="https://www.cca.edu/academics/graduate/comics" target="_blank"><img src="images/ui/comicsLogo.svg"></a>
+    <a href="https://www.facebook.com/ccamfacomics" target="_blank"><img src="images/ui/mfafb.png"></a>
+    <br>
+    <a href="https://www.cca.edu/admissions/apply" target="_blank">Apply Now</a> | <a href="https://www.cca.edu/admissions/info" target="_blank">Get Info</a>
+    <!-- <p id="backgroundInfo">background image by [NAME OF STUDENT] from [TITLE OF WORK]</p>-->
+</div>
 
 
 
@@ -97,9 +84,6 @@
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-
-
-
 
 
 
@@ -120,7 +104,7 @@
     function makeThesisPage(imgUrl) {
 
 
-        var thesisPage = $('<div className="thesisPage"><img src="' + imgUrl + '"/></div>')
+        var thesisPage = $('<div class="thesisPage"><img src="' + imgUrl + '"/></div>')
 
         return thesisPage;
     }
@@ -130,12 +114,18 @@
     // takes student object, returns jQuery object to be attached to existing DOM body
     function makeStudentThesis(student) {
 
+        document.title = student.thesisTitle + ' by ' + student.displayName;
 
         console.log(student);
         var numberOfPagesPlusOne = student.thesisPages + 1;
         var studentPath = student.thesisPath;
 
         var thesisPage;
+
+        $('#title').append(student.thesisTitle);
+        $('#byline').append(student.displayName);
+
+
 
         for (var i=1; i < numberOfPagesPlusOne ; i++){
 
