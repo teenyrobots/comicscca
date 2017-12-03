@@ -136,15 +136,21 @@ p {
 
 #header h1 {
     text-transform: uppercase;
-    font-size: 4em;
-    letter-spacing: .25em;
-    padding-bottom: 0;
+    font-size: 3em;
+    letter-spacing: .15em;
+    padding-bottom: .5em;
     margin-bottom: 0;
+    max-width: 90%;
+    display: block;
+    margin: auto;
 }
 
 #header h2 {
     text-transform: uppercase;
     font-weight: 200;
+    max-width: 90%;
+    display: block;
+    margin: auto;
 }
 
 
