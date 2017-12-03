@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#000000">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
 
-    <title>Directory</title>
+    <title>CCA MFA in Comics</title>
 
     <link href="index.css" rel="stylesheet"/>
     <link rel="shortcut icon" type="image/png" href="images/ui/favicon.png" />
@@ -15,8 +15,10 @@
 
 <!--
 TODO
-[ ] add images to cards
-[ ] figure out better way to delinate by year
+[x] add images to cards
+[x] figure out better way to delinate by year
+[ ] why doesn't 2016 work
+[ ] do something about people with no digital
 -->
 
 <body>
@@ -26,48 +28,71 @@ TODO
         You need to enable JavaScript to run this app.
     </noscript>
 
+<div class="transp">
 
     <div id="header">
-
         <div id="stickyHeader">
-            <div id="headerContent">
-                <a href="/">
-                    <img src='./images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
-                    <img src='./images/ui/ccaLogo.png' id="cca" alt="CCA" />
-                    <br style='clear:both' />
-                </a>
-            </div>
+            <a href="/">
+                <img src='/images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
+                <img src='images/ui/ccaLogo.svg' id="cca" alt="CCA" />
+                <br style='clear:both' />
+            </a>
         </div>
     </div>
 
+    <div class="cardDad">
+
+        <div class="button">
+            <a href="#2017">
+                <h3>class of</h3>
+                <h1>2017</h1>
+            </a>
+        </div>
+
+        <div class="button">
+            <a href="#2016">
+                <h3>class of</h3>
+                <h1>2016</h1>
+            </a>
+        </div>
+
+        <div class="button">
+            <a href="#2015">
+                <h3>class of</h3>
+                <h1>2015</h1>
+            </a>
+        </div>
+    </div>
 
     <div id="grads">
+        <div class="year" id="2017">
+            <h3>class of <span style="font-weight: 400">2017</span></h3>
+        </div>
 
         <div class="cardDad" id="cards2017">
-            <div class="year">
-                <h3>class of <span style="font-weight: 400">2017</span></h3>
-            </div>
+        </div>
+
+        <div class="year" id="#2016">
+            <h3>class of <span style="font-weight: 400">2016</span></h3>
         </div>
 
         <div class="cardDad" id="cards2016">
-            <div class="year">
-                <h3>class of <span style="font-weight: 400">2016</span></h3>
-            </div>
+        </div>
+
+        <div class="year" id="2015">
+            <h3>class of <span style="font-weight: 400">2015</span></h3>
         </div>
 
         <div class="cardDad" id="cards2015">
-            <div class="year">
-                <h3>class of <span style="font-weight: 400">2015</span></h3>
-            </div>
         </div>
 
     </div>
-
+</div>
 
     <div id="Footer">
         <p>The California College of the Arts MFA in Comics Program offers an accredited low-residency graduate degree.
         </p>
-        <a href="https://www.cca.edu/" target="_blank"><img src="images/ui/ccaLogo.png"></a>
+        <a href="https://www.cca.edu/" target="_blank"><img src="images/ui/ccaLogo.svg"></a>
         <a href="https://www.cca.edu/academics/graduate/comics" target="_blank"><img src="images/ui/comicsLogo.svg"></a>
         <a href="https://www.facebook.com/ccamfacomics" target="_blank"><img src="images/ui/mfafb.png"></a>
         <br>

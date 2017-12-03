@@ -11,6 +11,10 @@ body {
 }
 
 /*GENERAL STYLES*/
+a {
+    font-weight: 300;
+}
+
 a:link {
     color: white;
 }
@@ -35,6 +39,15 @@ hr {
     margin-top: 1.5em;
 }
 
+p {
+    font-weight: 300;
+}
+
+.transp {
+    background-color: rgba(255, 255, 255, .6);
+
+}
+
 .button a {
   color: white;
   text-decoration: none;
@@ -47,7 +60,7 @@ hr {
   background: rgba(0, 0, 0, .75);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
   text-align: center;
-  width: 20em;
+  width: 15em;
   padding: .5em;
   margin: 1em auto;
 }
@@ -70,7 +83,7 @@ hr {
   display: block;
   margin: 1em auto;
   padding: 1em;
-  background: rgba(0, 0, 0, .75);
+  background: rgba(0, 0, 0, .8);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
 }
 
@@ -86,6 +99,7 @@ hr {
     width: 80%;
     max-width: 685px;
     padding: 1em 0;
+    margin-top: 30vh;
 }
 
 #bigHeader h3 {
@@ -93,25 +107,20 @@ hr {
 }
 
 #stickyHeader {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    padding-top: .5em;
     color: white;
     position: sticky;
-    width: 100%;
     top: 0;
-    /*height: 3em;*/
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, .6);
+    padding-bottom: .5em;
     margin-bottom: 1em;
 }
 
 #stickyHeader img {
     height: 2em;
-}
-
-#headerContent {
-  display: block;
-  margin: auto;
-  width: 100%;
-  max-width: 700px;
-  padding-top: .5em;
 }
 
 #comics {
@@ -137,6 +146,7 @@ hr {
     font-weight: 200;
 }
 
+
 /*STYLES FOR FOOTER COMPONENT*/
 #Footer {
   width: 100%;
@@ -149,10 +159,15 @@ hr {
     height: 2em;
 }
 
+
 /*GRADS COMPONENT*/
 .year {
-    width: 100%;
-    background: rgba(0, 0, 0, .85);
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, .75);
+    margin-top: 3em;
 }
 
 .year h3 {
@@ -162,6 +177,8 @@ hr {
     margin: 0;
     text-align: left;
     padding: .25em;
+    max-width: 675px;
+    margin: auto;
 }
 
 .studentCard {
@@ -192,13 +209,13 @@ hr {
     text-decoration: none;
 }
 
-.person {
+/*.person {
   display: inline-block;
   margin: auto;
   margin-bottom: .5em;
 }
 
-/* i stopped using a person image
+ i stopped using a person image
 .person img {
   border-radius: 100%;
   float: left;
@@ -212,7 +229,7 @@ hr {
     font-size: 1.5em;
 }
 
-.work img {
+/*.work img {
   width: 100%;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
 }
@@ -235,14 +252,14 @@ hr {
   bottom: 70px;
   padding: .25em 0;
   margin-bottom: -50px;
-}
+}*/
 
 .cardDad {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  max-width: 700px;
-  margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
     margin-top: 3em;
 }
 

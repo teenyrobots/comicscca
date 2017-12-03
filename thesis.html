@@ -18,6 +18,7 @@ TODO
 [x] set page title to thesis title
 [ ] make "back" button way cuter
 [x] add header with thesis title and student byline
+[ ] no space between header and pg 1
 
 NICE TO HAVE
 [x] display spreads as double wide
@@ -37,14 +38,12 @@ NICE TO HAVE
 
 <div id="header">
    <div id="stickyHeader">
-        <div id="headerContent">
             <a href="/">
-                <img src='./images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
-                <img src='./images/ui/ccaLogo.png' id="cca" alt="CCA" />
+                <img src='/images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
+                <img src='images/ui/ccaLogo.svg' id="cca" alt="CCA" />
                 <br style='clear:both' />
             </a>
             <hr>
-        </div>
 
        <h1 id="title"></h1>
        <h2 id="byline" style="padding-bottom: 1em">by: </h2>
@@ -53,7 +52,7 @@ NICE TO HAVE
 </div>
 
 
-<div id="thesis">
+<div id="thesis" >
     <div id="comic">
 
         <!--student panels go here-->
@@ -71,7 +70,7 @@ NICE TO HAVE
 <div id="Footer">
     <p>The California College of the Arts MFA in Comics Program offers an accredited low-residency graduate degree.
     </p>
-    <a href="https://www.cca.edu/" target="_blank"><img src="images/ui/ccaLogo.png"></a>
+    <a href="https://www.cca.edu/" target="_blank"><img src="images/ui/ccaLogo.svg"></a>
     <a href="https://www.cca.edu/academics/graduate/comics" target="_blank"><img src="images/ui/comicsLogo.svg"></a>
     <a href="https://www.facebook.com/ccamfacomics" target="_blank"><img src="images/ui/mfafb.png"></a>
     <br>
@@ -115,7 +114,7 @@ NICE TO HAVE
     // takes student object, returns jQuery object to be attached to existing DOM body
     function makeStudentThesis(student) {
 
-        document.title = student.thesisTitle + 'by' + student.displayName;
+        document.title = student.thesisTitle + ' by ' + student.displayName;
 
         console.log(student);
         var numberOfPagesPlusOne = student.thesisPages + 1;
