@@ -1,9 +1,4 @@
-function randomBackground() {
-    var backgroundNum = Math.floor(Math.random() * 15) + 1;
-    var backgroundImg = "images/backgrounds/" + backgroundNum + ".jpg";
-    $('body').css('background-image', 'url(' + backgroundImg + ')');
-    whichStudent(backgroundNum);
-};
+
 
 function whichStudent(x) {
     var student = {}
@@ -154,6 +149,6 @@ function whichStudent(x) {
             break;
     };
 
-    $("#name").append(student.name);
-    $("#title").append(student.title);
+    $("#footerName").append(student.name);
+    $("#footerTitle").append(student.title);
 }

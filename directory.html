@@ -97,7 +97,7 @@ TODO
         <a href="https://www.facebook.com/ccamfacomics" target="_blank"><img src="images/ui/mfafb.png"></a>
         <br>
         <a href="https://www.cca.edu/admissions/apply" target="_blank">Apply Now</a> | <a href="https://www.cca.edu/admissions/info" target="_blank">Get Info</a>
-        <!-- <p id="backgroundInfo">background image by [NAME OF STUDENT] from [TITLE OF WORK]</p>-->
+        <p id="backgroundInfo">Background by <span id="footerName"></span> from <span id="footerTitle"></span></p>
     </div>
 
 
@@ -135,18 +135,36 @@ TODO
         };
 
 
-        $(document).ready(function() {
 
-            randomBackground();
+
+
+
+        var backgroundStudents = [];
+
+        function setSplash() {
+            Math.floor(Math.random() * 15);
+            var backgroundImg = "images/backgrounds/" + backgroundNum + ".jpg";
+            $('body').css('background-image', 'url(' + backgroundImg + ')');
+        }
+
+        $(document).ready(function() {
 
             $.getJSON('data/students.json', function(data) {
                 data.students.map(function(student) {
+                    if (student.backgroundImage != undefined) {
+                        backgroundStudents.push(student);
+                    };
                     var studentCard = makeStudentCard(student);
                     var classCardId = "#cards" + student.year;
                     $(classCardId).append(studentCard);
-
                 });
             });
+
+            console.log(backgroundStudents);
+            console.log(backgroundStudents[1]);
+            console.log(backgroundStudents.length);
+
+            //setSplash();
 
         });
 

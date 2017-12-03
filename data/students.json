@@ -18,7 +18,8 @@
       "thesisTitle": "Fever Dreams of the City that Never Was",
       "digitalTitle": "Aisling",
       "digitalUrl": "15freund/freund.html",
-      "thesisPath": "15freund/"
+      "thesisPath": "15freund/",
+      "backgroundImage": "images/backgrounds/2.jpg"
     },
     {
       "displayName": "Ashley Guillory",
@@ -28,7 +29,8 @@
       "thesisTitle": "Sam's Town",
       "digitalTitle": "Morning Melody",
       "digitalUrl": "15guillory/guillory.html",
-      "thesisPath": "15guillory/"
+      "thesisPath": "15guillory/",
+      "backgroundImage": "images/backgrounds/1.jpg"
     },
     {
       "displayName": "David Kelly",
@@ -48,7 +50,8 @@
       "thesisTitle": "The Thief's Tale",
       "digitalTitle": "Night Driving",
       "digitalUrl": "15kobabe/kobabe.html",
-      "thesisPath": "15kobabe/"
+      "thesisPath": "15kobabe/",
+      "backgroundImage": "images/backgrounds/3.jpg"
     },
     {
       "displayName": "Jacob Magraw",
@@ -88,7 +91,8 @@
       "thesisTitle": "Bad Year",
       "digitalTitle": "I Went on a Walk and I Saw a Snake",
       "digitalUrl": "15white/white.html",
-      "thesisPath": "15white/"
+      "thesisPath": "15white/",
+      "backgroundImage": "images/backgrounds/4.jpg"
     },
     {
       "displayName": "Shane McDermott",
@@ -108,7 +112,8 @@
       "thesisTitle": "The Tale of Old Ryan",
       "digitalTitle": "This Will All End in Flames",
       "digitalUrl": "16bitinis/comics.html",
-      "thesisPath": "16bitinis/"
+      "thesisPath": "16bitinis/",
+      "backgroundImage": "images/backgrounds/5.jpg"
     },
     {
       "displayName": "Kayan Cheung-Miaw",
@@ -118,7 +123,8 @@
       "thesisTitle": "Your Struggle is Your Strength",
       "digitalTitle": "The Experience of Many Lifetimes",
       "digitalUrl": "16cheungmiaw/kayan_cover.html",
-      "thesisPath": "16cheungmiaw/"
+      "thesisPath": "16cheungmiaw/",
+      "backgroundImage": "images/backgrounds/6.jpg"
     },
     {
       "displayName": "Peter Glanting",
@@ -148,7 +154,8 @@
       "thesisTitle": "Whale and Albatross",
       "digitalTitle": "Death",
       "digitalUrl": "16inoue/home.html",
-      "thesisPath": "16inoue/"
+      "thesisPath": "16inoue/",
+      "backgroundImage": "images/backgrounds/7.jpg"
     },
     {
       "displayName": "Cordelia McGee-Tubb",
@@ -158,7 +165,8 @@
       "thesisTitle": "Selected Stories from Your Hands Are Clean and You Have Nothing to Worry About",
       "digitalTitle": "Brocedurally Generated",
       "digitalUrl": "16mcgeetubb/index.html",
-      "thesisPath": "16mcgeetubb/"
+      "thesisPath": "16mcgeetubb/",
+      "backgroundImage": "images/backgrounds/8.jpg"
     },
     {
       "displayName": "Paul Morehead",
@@ -178,7 +186,8 @@
       "thesisTitle": "Sick Bed Blues",
       "digitalTitle": "The Crystal Ball",
       "digitalUrl": "16olson/pg1.html",
-      "thesisPath": "16olson/"
+      "thesisPath": "16olson/",
+      "backgroundImage": "images/backgrounds/9.jpg"
     },
     {
       "displayName": "Wei-Ching Shyu",
@@ -208,7 +217,8 @@
       "thesisTitle": 4,
       "digitalTitle": "Snack Time",
       "digitalUrl": "16williams/comics.html",
-      "thesisPath": "16williams/"
+      "thesisPath": "16williams/",
+      "backgroundImage": "images/backgrounds/10.jpg"
     },
     {
       "displayName": "Rachell Sumpter",
@@ -228,7 +238,8 @@
       "thesisTitle": "The First Witch",
       "digitalTitle": "The Key & Cup",
       "digitalUrl": "17bain/index.html",
-      "thesisPath": "17bain/"
+      "thesisPath": "17bain/",
+      "backgroundImage": "images/backgrounds/11.jpg"
     },
     {
       "displayName": "Eli Bishop",
@@ -238,7 +249,8 @@
       "thesisTitle": "TK",
       "digitalTitle": "Spex",
       "digitalUrl": "17bishop/index.html",
-      "thesisPath": "17bishop/"
+      "thesisPath": "17bishop/",
+      "backgroundImage": "images/backgrounds/12.jpg"
     },
     {
       "displayName": "Craig Campbell",
@@ -248,7 +260,8 @@
       "thesisTitle": "TK",
       "digitalTitle": "Skinhead Mixtape",
       "digitalUrl": "17campbell/index.html",
-      "thesisPath": "17campbell/"
+      "thesisPath": "17campbell/",
+      "backgroundImage": "images/backgrounds/13.jpg"
     },
     {
       "displayName": "Lauren Davis",
@@ -268,7 +281,8 @@
       "thesisTitle": "Speed of Light",
       "digitalTitle": "Dungeon Dude: Quest for the Golden Duck",
       "digitalUrl": "17gainey/index.html",
-      "thesisPath": "17gainey/"
+      "thesisPath": "17gainey/",
+      "backgroundImage": "images/backgrounds/14.jpg"
     },
     {
       "displayName": "Patrick Lay",
@@ -278,7 +292,8 @@
       "thesisTitle": "Ramble",
       "digitalTitle": "Look Beneath",
       "digitalUrl": "17lay/index.html",
-      "thesisPath": "17lay/"
+      "thesisPath": "17lay/",
+      "backgroundImage": "images/backgrounds/15.jpg"
     },
     {
       "displayName": "Yael Levy",
