@@ -106,8 +106,10 @@ TODO
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="index.js"></script>
 
     <script>
+
 
         // takes student object, returns jQuery object
         function makeStudentCard(student) {
@@ -130,14 +132,6 @@ TODO
 
 
             return studentDiv;
-        };
-
-        function randomBackground() {
-            var backgroundNum = Math.floor(Math.random() * 3) + 1;
-            console.log("the backgroundImg is " + backgroundImg);
-
-            var backgroundImg = "images/backgrounds/" + backgroundNum + ".jpg"
-            $('body').css('background-image', 'url(' + backgroundImg + ')');
         };
 
 
