@@ -20,7 +20,7 @@ TODO
 [x] rethink layout of content
 
 NICE TO HAVE
-[ ] dynamically change background
+[x] dynamically change background
 [ ] credit background student in footer
 [ ] scrolling change header
 -->
@@ -69,9 +69,54 @@ NICE TO HAVE
     <a href="https://www.facebook.com/ccamfacomics" target="_blank"><img src="images/ui/mfafb.png"></a>
     <br>
     <a href="https://www.cca.edu/admissions/apply" target="_blank">Apply Now</a> | <a href="https://www.cca.edu/admissions/info" target="_blank">Get Info</a>
-    <!-- <p id="backgroundInfo">background image by [NAME OF STUDENT] from [TITLE OF WORK]</p>-->
+    <p id="backgroundInfo">Background by <span id="luckyStudent"></span> from <a id="luckyThesis"><span id="luckyCartoon"></span></a></p>
 </div>
 
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script>
+
+    function setSplash(students) {
+        var rando = Math.floor(Math.random() * students.length);
+        var luckyStudent = students[rando];
+
+        var backgroundImg = "images/backgrounds/" + rando + ".jpg";
+        $('body').css('background-image', 'url(' + backgroundImg + ')');
+
+        $('#luckyStudent').append(luckyStudent.displayName);
+        $('#luckyCartoon').append(luckyStudent.thesisTitle);
+        $('#luckyThesis').attr('href', 'thesis.html?student=' + luckyStudent.slug);
+    }
+
+
+    $(document).ready(function() {
+
+        $.getJSON('data/students.json', function(data) {
+
+            //
+            // set background to random student art
+            //
+            var backgroundStudents = data.students.filter(function(student){
+                return student.backgroundImage !== undefined;
+            });
+
+            setSplash(backgroundStudents);
+
+
+        });
+
+    });
+
+
+
+
+
+
+
+</script>
 
 </body>
 

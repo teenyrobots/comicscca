@@ -4,9 +4,10 @@ body {
     background-color: black;
     color: white;
     font-family: 'Lato', sans-serif;
-    background-image: url('images/backgrounds/17lay.jpg');
-    background-position: center;
-    background-repeat: repeat;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     text-align: center;
 }
 
@@ -44,7 +45,7 @@ p {
 }
 
 .transparent {
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .8);
     width: 100vw;
 }
 
@@ -57,7 +58,7 @@ p {
   display: block;
   flex-wrap: wrap;
   margin: auto;
-  background: rgba(0, 0, 0, .75);
+  background: rgba(0, 0, 0, .9);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
   text-align: center;
   width: 15em;
@@ -83,13 +84,13 @@ p {
   display: block;
   margin: 1em auto;
   padding: 1em;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, .9);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
 }
 
 /*HEADER COMPONENT*/
 #header {
-    background: rgba(0,0,0,.75);
+    background: rgba(0,0,0,.9);
     box-shadow: 0px 1px 6px rgba(0, 0, 0, .6);
     width: 100vw;
 }
@@ -138,7 +139,7 @@ p {
     text-transform: uppercase;
     font-size: 3em;
     letter-spacing: .15em;
-    padding-bottom: .5em;
+    padding: .5em 0;
     margin-bottom: 0;
     max-width: 90%;
     display: block;
@@ -157,7 +158,7 @@ p {
 /*STYLES FOR FOOTER COMPONENT*/
 #Footer {
   width: 100vw;
-  background: rgba(0,0,0,.85);
+  background: rgba(0,0,0,.9);
   padding: 1em;
 }
 
@@ -166,6 +167,23 @@ p {
     height: 2em;
 }
 
+#footerTitle {
+    font-style: italic;
+    font-weight: 400;
+    padding: 0 .25em;
+}
+
+#footerName {
+    font-weight: 400;
+    padding: 0 .25em;
+}
+
+#backgroundInfo {
+    text-transform: uppercase;
+    font-size: .75em;
+    font-weight: 300;
+    padding-top: 1em;
+}
 
 /*GRADS COMPONENT*/
 .year {
@@ -173,7 +191,7 @@ p {
     margin: auto;
     width: 90%;
     max-width: 1000px;
-    background: rgba(0, 0, 0, .75);
+    background: rgba(0, 0, 0, .9);
     margin-top: 3em;
 }
 
@@ -193,7 +211,7 @@ p {
   padding: 1em;
   width: 80%;
   max-width: 285px;
-  background: rgba(0, 0, 0, .85);
+  background: rgba(0, 0, 0, .9);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
 }
 
