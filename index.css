@@ -70,14 +70,14 @@ p {
 
 .button h3 {
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.5em;
   margin: 0;
 }
 
 .button p{
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .note {
@@ -200,7 +200,7 @@ p {
 
 .year h3 {
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.5em;
     margin: 0;
     text-align: center;
