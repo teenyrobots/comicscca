@@ -13,13 +13,6 @@
 
 </head>
 
-<!--
-TODO
-[x] add images to cards
-[x] figure out better way to delinate by year
-[x] why doesn't 2016 work
-[x] do something about people with no digital
--->
 
 <body>
 
@@ -28,66 +21,66 @@ TODO
         You need to enable JavaScript to run this app.
     </noscript>
 
-<div class="transparent">
+    <div class="transparent">
 
-    <div id="header">
-        <div id="stickyHeader">
-            <a href="/">
-                <img src='/images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
-                <img src='images/ui/ccaLogo.svg' id="cca" alt="CCA" />
-                <br style='clear:both' />
-            </a>
+        <div id="header">
+            <div id="stickyHeader">
+                <a href="/">
+                    <img src='/images/ui/comicsLogo.svg' id="comics" alt="CCA MFA in Comics"/>
+                    <img src='images/ui/ccaLogo.svg' id="cca" alt="CCA" />
+                    <br style='clear:both' />
+                </a>
+            </div>
+        </div>
+
+        <div class="cardDad">
+
+            <div class="button">
+                <a href="#2017">
+                    <h3>class of</h3>
+                    <h1>2017</h1>
+                </a>
+            </div>
+
+            <div class="button">
+                <a href="#2016">
+                    <h3>class of</h3>
+                    <h1>2016</h1>
+                </a>
+            </div>
+
+            <div class="button">
+                <a href="#2015">
+                    <h3>class of</h3>
+                    <h1>2015</h1>
+                </a>
+            </div>
+        </div>
+
+        <div id="grads">
+            <div class="year" id="2017">
+                <h3>class of <span style="font-weight: 400">2017</span></h3>
+            </div>
+
+            <div class="cardDad" id="cards2017">
+            </div>
+
+            <div class="year" id="2016">
+                <h3>class of <span style="font-weight: 400">2016</span></h3>
+            </div>
+
+            <div class="cardDad" id="cards2016">
+            </div>
+
+            <div class="year" id="2015">
+                <h3>class of <span style="font-weight: 400">2015</span></h3>
+            </div>
+
+            <div class="cardDad" id="cards2015">
+            </div>
+
         </div>
     </div>
-
-    <div class="cardDad">
-
-        <div class="button">
-            <a href="#2017">
-                <h3>class of</h3>
-                <h1>2017</h1>
-            </a>
-        </div>
-
-        <div class="button">
-            <a href="#2016">
-                <h3>class of</h3>
-                <h1>2016</h1>
-            </a>
-        </div>
-
-        <div class="button">
-            <a href="#2015">
-                <h3>class of</h3>
-                <h1>2015</h1>
-            </a>
-        </div>
-    </div>
-
-    <div id="grads">
-        <div class="year" id="2017">
-            <h3>class of <span style="font-weight: 400">2017</span></h3>
-        </div>
-
-        <div class="cardDad" id="cards2017">
-        </div>
-
-        <div class="year" id="2016">
-            <h3>class of <span style="font-weight: 400">2016</span></h3>
-        </div>
-
-        <div class="cardDad" id="cards2016">
-        </div>
-
-        <div class="year" id="2015">
-            <h3>class of <span style="font-weight: 400">2015</span></h3>
-        </div>
-
-        <div class="cardDad" id="cards2015">
-        </div>
-
-    </div>
-</div>
 
     <div id="Footer">
         <p>The California College of the Arts MFA in Comics Program offers an accredited low-residency graduate degree.
@@ -106,7 +99,6 @@ TODO
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
 
-    <!--<script type="text/javascript" src="index.js"></script>-->
 
     <script>
 
@@ -126,9 +118,6 @@ TODO
             } else {
                 var studentDiv = $("<div class='studentCard'>" + "<h1>" + name + "</h1><span class='thesis'><a href='" + thesisUrl + "'><img src='images/cards/thesis/" + slug + ".png'><p>" + thesisTitle + "</p></a></span>"+ "</p><span class='digital'><a href='" + digitalUrl + "' target='_blank'><img src='images/cards/digital/" + slug + ".png'><p>" + digitalTitle + "</p></a></span></div>");
             }
-
-            //var studentDiv = $("<div class='studentCard'>" + "<p class='name'>" + name + "</p><span class='thesis'><a href='" + thesisUrl + "'>Thesis: " + thesisTitle + "</a></span>"+ "</p><span class='digital'><a href='" + digitalUrl + "'>DigitalProject: " + digitalTitle + "</a></span></div>");
-
 
             return studentDiv;
         };
@@ -182,31 +171,3 @@ TODO
 
 </body>
 </html>
-
-<!-- JOYCE! -->
-
-<!--I didn't full implement this stuff below, in the "studentDiv" above, but you can! Including the old code as notes for you below. -->
-
-<!--<div className="studentCard">-->
-    <!--<div className="person">-->
-        <!--<img src={padillaI} alt="Portrait of Amber Padilla"/>-->
-        <!--<h1>Amber Padilla</h1>-->
-    <!--</div>-->
-    <!--<div className="work">-->
-        <!--<a href="/thesis">-->
-            <!--<img src={padillaT} alt="Amber Padilla's thesis project" />-->
-            <!--<div className="workDiv">-->
-                <!--<h3>"Reel Love"</h3>-->
-            <!--</div>-->
-        <!--</a>-->
-    <!--</div>-->
-    <!--<div className="work">-->
-        <!--<a href="/thesis">-->
-            <!--<img src={padillaD} alt="Amber Padilla's digital project" />-->
-            <!--<div className="workDiv">-->
-                <!--<h3>"A Kitten's Tale"</h3>-->
-            <!--</div>-->
-        <!--</a>-->
-    <!--</div>-->
-<!--</div>-->
-<!--</div>-->

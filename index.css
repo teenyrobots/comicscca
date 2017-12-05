@@ -20,17 +20,14 @@ a:link {
     color: white;
 }
 
-/* visited link */
 a:visited {
     color: white;
 }
 
-/* mouse over link */
 a:hover {
     color: #66b2b2;
 }
 
-/* selected link */
 a:active {
     color: teal;
 }
@@ -44,19 +41,17 @@ p {
     font-weight: 300;
 }
 
+/*REUSABLE ELEMENTS*/
 .transparent {
     background-color: rgba(255, 255, 255, .8);
     width: 100vw;
 }
 
-
-
 .button {
   display: block;
   flex-wrap: wrap;
-  margin: auto;
   background: rgba(0, 0, 0, .9);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .6);
   text-align: center;
   width: 10em;
   padding: .5em;
@@ -93,7 +88,7 @@ p {
 /*HEADER COMPONENT*/
 #header {
     background: rgba(0,0,0,.9);
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, .6);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .6);
     width: 100vw;
 }
 
@@ -142,10 +137,10 @@ p {
     font-size: 3em;
     letter-spacing: .15em;
     padding: .5em 0;
-    margin-bottom: 0;
     max-width: 90%;
     display: block;
     margin: auto;
+    margin-bottom: 0;
 }
 
 #header h2 {
@@ -202,7 +197,6 @@ p {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 1.5em;
-    margin: 0;
     text-align: center;
     padding: .25em;
     max-width: 675px;
@@ -215,7 +209,7 @@ p {
   width: 80%;
   max-width: 285px;
   background: rgba(0, 0, 0, .9);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .6);
 }
 
 .studentCard img {
