@@ -13,21 +13,8 @@
 
 </head>
 
-<!--
-TODO
-[x] set page title to thesis title
-[x] add header with thesis title and student byline
 
-NICE TO HAVE
-[x] display spreads as double wide
-[ ] tweak thesis header
-[ ] make "back" button way cuter
-[ ] dynamically set bg to black or white depending on student work (inc in json)
--->
-
-
-<body style="background-image: none; background-color: white;">
-
+<body id="ThesisBody">
 
 
 <noscript>
@@ -60,7 +47,7 @@ NICE TO HAVE
     </div>
 
     <a href="/directory.html">
-        <div class="button">
+        <div class="button" style="margin-top: 3em">
             <p>back to anthology</p>
         </div>
     </a>
@@ -115,7 +102,6 @@ NICE TO HAVE
 
         document.title = student.thesisTitle + ' by ' + student.displayName;
 
-        console.log(student);
         var numberOfPagesPlusOne = student.thesisPages + 1;
         var studentPath = student.thesisPath;
 
@@ -129,7 +115,6 @@ NICE TO HAVE
         for (var i=1; i < numberOfPagesPlusOne ; i++){
 
             filePath = '/images/thesis/' + studentPath + i + '.jpg';
-            console.log(filePath);
 
             thesisPage = makeThesisPage(filePath);
 
@@ -166,9 +151,6 @@ NICE TO HAVE
     });
 
 </script>
-
-
-
 
 
 </body>

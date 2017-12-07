@@ -5,7 +5,6 @@ body {
     color: white;
     font-family: 'Lato', sans-serif;
     background-position: center top;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
@@ -13,24 +12,22 @@ body {
 
 /*GENERAL STYLES*/
 a {
-    font-weight: 300;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 a:link {
     color: white;
 }
 
-/* visited link */
 a:visited {
     color: white;
 }
 
-/* mouse over link */
 a:hover {
     color: #66b2b2;
 }
 
-/* selected link */
 a:active {
     color: teal;
 }
@@ -44,24 +41,19 @@ p {
     font-weight: 300;
 }
 
+/*REUSABLE ELEMENTS*/
 .transparent {
     background-color: rgba(255, 255, 255, .8);
     width: 100vw;
 }
 
-.button a {
-  color: white;
-  text-decoration: none;
-}
-
 .button {
   display: block;
   flex-wrap: wrap;
-  margin: auto;
   background: rgba(0, 0, 0, .9);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .6);
   text-align: center;
-  width: 15em;
+  width: 10em;
   padding: .5em;
   margin: 1em auto;
 }
@@ -73,16 +65,21 @@ p {
 
 .button h3 {
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.5em;
   margin: 0;
+}
+
+.button p{
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 .note {
   width: 80%;
   max-width: 700px;
   display: block;
-  margin: 1em auto;
+  margin: 3em auto;
   padding: 1em;
   background: rgba(0, 0, 0, .9);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
@@ -91,7 +88,7 @@ p {
 /*HEADER COMPONENT*/
 #header {
     background: rgba(0,0,0,.9);
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, .6);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .6);
     width: 100vw;
 }
 
@@ -140,10 +137,10 @@ p {
     font-size: 3em;
     letter-spacing: .15em;
     padding: .5em 0;
-    margin-bottom: 0;
     max-width: 90%;
     display: block;
     margin: auto;
+    margin-bottom: 0;
 }
 
 #header h2 {
@@ -160,6 +157,7 @@ p {
   width: 100vw;
   background: rgba(0,0,0,.9);
   padding: 1em;
+    margin-top: 3em;
 }
 
 #Footer img {
@@ -174,7 +172,6 @@ p {
 }
 
 #luckyStudent {
-    font-weight: 400;
     padding: 0 .25em;
 }
 
@@ -183,23 +180,23 @@ p {
     font-size: .75em;
     font-weight: 300;
     padding-top: 1em;
+    margin-bottom: 1em;
 }
 
 /*GRADS COMPONENT*/
 .year {
     display: block;
     margin: auto;
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1100px;
     background: rgba(0, 0, 0, .9);
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 .year h3 {
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.5em;
-    margin: 0;
     text-align: center;
     padding: .25em;
     max-width: 675px;
@@ -212,7 +209,7 @@ p {
   width: 80%;
   max-width: 285px;
   background: rgba(0, 0, 0, .9);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .6);
 }
 
 .studentCard img {
@@ -247,9 +244,9 @@ p {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 /*THESIS COMPONENT*/
@@ -257,4 +254,8 @@ p {
     display: block;
     margin: auto;
     max-width: 100%;
+}
+
+#ThesisBody {
+    background-color: white;
 }
