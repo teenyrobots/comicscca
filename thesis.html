@@ -14,7 +14,7 @@
 </head>
 
 
-<body>
+<body id="ThesisBody">
 
 
 <noscript>
@@ -102,7 +102,6 @@
 
         document.title = student.thesisTitle + ' by ' + student.displayName;
 
-        console.log(student);
         var numberOfPagesPlusOne = student.thesisPages + 1;
         var studentPath = student.thesisPath;
 
@@ -116,7 +115,6 @@
         for (var i=1; i < numberOfPagesPlusOne ; i++){
 
             filePath = '/images/thesis/' + studentPath + i + '.jpg';
-            console.log(filePath);
 
             thesisPage = makeThesisPage(filePath);
 
